@@ -67,7 +67,6 @@ def predict_car_safety(
         prediction = deployed_xgb.predict(input_data)
 
         # Assuming standard label encoding for the 'decision' target
-        # (Modify these return strings if your dataset used different target labels like unacc, acc, good, vgood)
         result_map = {
             0: "Unacceptable (unacc)",
             1: "Acceptable (acc)",
@@ -98,7 +97,7 @@ Select the vehicle's specifications below to run the assessment.
 
 developer_info = """
 ### About the Developer
-**Created by:** Chandan Saroj
+**Created by:** Chintu (28240403)
 
 * **LinkedIn:** [Connect with me](YOUR_LINKEDIN_URL_HERE)
 * **GitHub:** [Check out my projects](YOUR_GITHUB_URL_HERE)
